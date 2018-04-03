@@ -20,6 +20,7 @@
     [self addObjectsToMutableSet];
     [self checkObjectInMutableSet];
     [self iteratingObjectInMutableSet];
+    [self blockEnumeration];
 }
 
 - (void)addObjectsToMutableSet {
@@ -65,6 +66,19 @@
     }
     NSLog(@"Set iterate finished in %f",[[NSDate date] timeIntervalSinceDate:now]);
 
+}
+
+- (void)blockEnumeration {
+    
+    NSDate* now = [NSDate date];
+    
+    __weak typeof(self) weakself = self;
+    [self.mSet enumerateObjectsUsingBlock:^(id obj, BOOL *stop){
+        if ([obj isEqual:weakself.testCar]) {
+            *stop = YES;
+            NSLog(@"Set Block enumeration Found in %f",[[NSDate date] timeIntervalSinceDate:now]);
+        }
+    } ];
 }
 
 @end

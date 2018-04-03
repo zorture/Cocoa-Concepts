@@ -20,6 +20,7 @@
     [self addObjectsToMutableArray];
     [self checkObjectInMutableArray];
     [self iteratingObjectInMutableArray];
+    [self blockEnumeration];
 }
 
 - (void)addObjectsToMutableArray {
@@ -62,6 +63,19 @@
     }
     NSLog(@"Array iterate finished in %f",[[NSDate date] timeIntervalSinceDate:now]);
     
+}
+
+- (void)blockEnumeration {
+    
+    NSDate* now = [NSDate date];
+    
+    __weak typeof(self) weakself = self;
+    [self.mArray enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop){
+        if ([obj isEqual:weakself.testCar]) {
+            *stop = YES;
+            NSLog(@"Array Block enumeration Found in %f",[[NSDate date] timeIntervalSinceDate:now]);
+        }
+    } ];
 }
 
 @end
