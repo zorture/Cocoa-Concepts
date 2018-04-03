@@ -35,7 +35,7 @@
         [self.mArray addObject:car];
     }
     
-    //NSLog(@"%@", self.mArray.debugDescription);
+    NSLog(@"%lu", (unsigned long)self.mArray.count);
 }
 
 - (void)checkObjectInMutableArray {

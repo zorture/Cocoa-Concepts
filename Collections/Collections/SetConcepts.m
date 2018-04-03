@@ -35,7 +35,7 @@
         [self.mSet addObject:car];
     }
     
-    //NSLog(@"%@", self.mSet.debugDescription);
+    NSLog(@"%lu", (unsigned long)self.mSet.count);
 }
 
 - (void)checkObjectInMutableSet {
