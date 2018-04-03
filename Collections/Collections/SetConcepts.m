@@ -19,6 +19,7 @@
 - (void)runConcepts{
     [self addObjectsToMutableSet];
     [self checkObjectInMutableSet];
+    [self iteratingObjectInMutableSet];
 }
 
 - (void)addObjectsToMutableSet {
@@ -46,6 +47,16 @@
         NSLog(@"Test Car not found");
     }
     
+}
+
+- (void)iteratingObjectInMutableSet {
+    
+    NSDate* now = [NSDate date];
+    for (Car* car in self.mSet) {
+        car.color = BLACK;
+    }
+    NSLog(@"Set iterate finished in %f",[[NSDate date] timeIntervalSinceDate:now]);
+
 }
 
 @end

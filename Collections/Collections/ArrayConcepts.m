@@ -19,6 +19,7 @@
 - (void)runConcepts{
     [self addObjectsToMutableArray];
     [self checkObjectInMutableArray];
+    [self iteratingObjectInMutableArray];
 }
 
 - (void)addObjectsToMutableArray {
@@ -45,6 +46,16 @@
     }else{
         NSLog(@"Test Car not found");
     }
+}
+
+- (void)iteratingObjectInMutableArray {
+    
+    NSDate* now = [NSDate date];
+    for (Car* car in self.mArray) {
+        car.color = BLACK;
+    }
+    NSLog(@"Array iterate finished in %f",[[NSDate date] timeIntervalSinceDate:now]);
+    
 }
 
 @end
