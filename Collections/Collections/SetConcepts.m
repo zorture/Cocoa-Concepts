@@ -35,6 +35,13 @@
         [self.mSet addObject:car];
     }
     
+    // NSStrig class has compiler optimization. both str1 & str2 are same object
+    NSString* str1 = @"Cocoa Collection";
+    [self.mSet addObject:str1];
+    NSString* str2 = @"Cocoa Collection";
+    [self.mSet addObject:str2];
+    
+    
     NSLog(@"%lu", (unsigned long)self.mSet.count);
 }
 
@@ -53,7 +60,8 @@
     
     NSDate* now = [NSDate date];
     for (Car* car in self.mSet) {
-        car.color = BLACK;
+        if([car isKindOfClass:[Car class]])
+            car.color = BLACK;
     }
     NSLog(@"Set iterate finished in %f",[[NSDate date] timeIntervalSinceDate:now]);
 

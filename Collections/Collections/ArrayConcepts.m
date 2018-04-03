@@ -35,6 +35,11 @@
         [self.mArray addObject:car];
     }
     
+    NSString* str1 = @"Cocoa Collection";
+    [self.mArray addObject:str1];
+    NSString* str2 = @"Cocoa Collection";
+    [self.mArray addObject:str2];
+    
     NSLog(@"%lu", (unsigned long)self.mArray.count);
 }
 
@@ -52,7 +57,8 @@
     
     NSDate* now = [NSDate date];
     for (Car* car in self.mArray) {
-        car.color = BLACK;
+        if([car isKindOfClass:[Car class]])
+            car.color = BLACK;
     }
     NSLog(@"Array iterate finished in %f",[[NSDate date] timeIntervalSinceDate:now]);
     
