@@ -7,20 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SetConcepts.h"
-#import "ArrayConcepts.h"
+#import "Constants.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        // Run for NSSet Concepts
-        SetConcepts* setConcept = [SetConcepts new];
-        [setConcept runConcepts];
-        
-        // Run for NSArray Concepts
-        ArrayConcepts* arrayConcept = [ArrayConcepts new];
-        [arrayConcept runConcepts];
-        
+        [AppRunner runAppRunner];
     }
     return 0;
 }

@@ -12,6 +12,8 @@
 		B94C765C2073E2F8002EA13C /* SetConcepts.m in Sources */ = {isa = PBXBuildFile; fileRef = B94C765B2073E2F8002EA13C /* SetConcepts.m */; };
 		B94C765F2073E8CB002EA13C /* ArrayConcepts.m in Sources */ = {isa = PBXBuildFile; fileRef = B94C765E2073E8CB002EA13C /* ArrayConcepts.m */; };
 		B94C76622073E91F002EA13C /* CollectionConcept.m in Sources */ = {isa = PBXBuildFile; fileRef = B94C76612073E91F002EA13C /* CollectionConcept.m */; };
+		B97809672084E3A0006C5BFC /* AppRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809662084E3A0006C5BFC /* AppRunner.m */; };
+		B978096A2084E444006C5BFC /* Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = B97809692084E444006C5BFC /* Hashing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,11 @@
 		B94C765E2073E8CB002EA13C /* ArrayConcepts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayConcepts.m; sourceTree = "<group>"; };
 		B94C76602073E91F002EA13C /* CollectionConcept.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionConcept.h; sourceTree = "<group>"; };
 		B94C76612073E91F002EA13C /* CollectionConcept.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionConcept.m; sourceTree = "<group>"; };
+		B97809642084E2A9006C5BFC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B97809652084E3A0006C5BFC /* AppRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppRunner.h; sourceTree = "<group>"; };
+		B97809662084E3A0006C5BFC /* AppRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppRunner.m; sourceTree = "<group>"; };
+		B97809682084E444006C5BFC /* Hashing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashing.h; sourceTree = "<group>"; };
+		B97809692084E444006C5BFC /* Hashing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hashing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				B94C76502073E222002EA13C /* main.m */,
+				B97809642084E2A9006C5BFC /* Constants.h */,
+				B97809652084E3A0006C5BFC /* AppRunner.h */,
+				B97809662084E3A0006C5BFC /* AppRunner.m */,
 				B94C76572073E24C002EA13C /* Car.h */,
 				B94C76582073E24C002EA13C /* Car.m */,
 				B94C76602073E91F002EA13C /* CollectionConcept.h */,
@@ -78,6 +88,8 @@
 				B94C765B2073E2F8002EA13C /* SetConcepts.m */,
 				B94C765D2073E8CB002EA13C /* ArrayConcepts.h */,
 				B94C765E2073E8CB002EA13C /* ArrayConcepts.m */,
+				B97809682084E444006C5BFC /* Hashing.h */,
+				B97809692084E444006C5BFC /* Hashing.m */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -108,7 +120,7 @@
 		B94C76452073E222002EA13C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Kanwar Zorawar Singh Rana";
 				TargetAttributes = {
 					B94C764C2073E222002EA13C = {
@@ -142,8 +154,10 @@
 				B94C765F2073E8CB002EA13C /* ArrayConcepts.m in Sources */,
 				B94C76622073E91F002EA13C /* CollectionConcept.m in Sources */,
 				B94C76592073E24C002EA13C /* Car.m in Sources */,
+				B97809672084E3A0006C5BFC /* AppRunner.m in Sources */,
 				B94C765C2073E2F8002EA13C /* SetConcepts.m in Sources */,
 				B94C76512073E222002EA13C /* main.m in Sources */,
+				B978096A2084E444006C5BFC /* Hashing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +178,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -171,6 +186,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -219,6 +235,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -226,6 +243,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
